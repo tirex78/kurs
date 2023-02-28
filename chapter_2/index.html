@@ -1,0 +1,144 @@
+<html>
+
+<head>
+  <title>Chapter 1</title>
+</head>
+
+<body>
+  <h1>Chapter 1</h1>
+  <h2>Основы JavaScript</h2>
+  <h3>Exercise 1 - Привет Мир</h3>
+  <p>Создайте страницу, которая отобразит сообщение «Я JavaScript!»</p>
+  <button onclick="alert('«Я JavaScript!»')">Push me</button>
+  <h3>Exercise 2</h3>
+  <p>Возьмите решение предыдущей задачи Вызвать alert, и измените его. Извлеките
+    содержимое скрипта во внешний файл alert.js , лежащий в той же папке.
+    Откройте страницу, убедитесь, что оповещение работает.</p>
+  <button onclick="alert('«Я JavaScript!»')">External File - Alert</button>
+  <h3>Exercise 4</h3>
+  <p>
+    <span style="color:green">/*
+      * Объявите две переменные: admin и name.<br />
+      * Запишите строку "Джон" в переменную name.<br />
+      * Скопируйте значение из переменной name в admin.<br />
+      * Выведите на экран значение admin, используя функцию alert (должна показать «Джон»).<br />
+      */</span><br />
+    let admin, name<br />
+    name = 'Джон'<br />
+    admin = name<br />
+    console.log(admin)<br /><br />
+
+    <span style="color:green">//Придумайте правильные имена</span><br />
+    const earth = 'Земля'<br />
+    const currentUserName = 'Джон'<br /><br />
+
+    <span style="color:green">// Какие буквы (заглавные или строчные) использовать для имён констант?</span><br />
+    const someCode = data => data <span style="color:green">//для удаления ошибки из консоли</span><br /><br />
+
+    const BIRTHDAY = '18.04.1982'<br />
+    const age = someCode(BIRTHDAY)<br />
+  </p>
+  <h3>Exercise 5</h3>
+  <p>Что выведет этот скрипт?</p>
+  <code>
+    const name = "Ilya"<br/>
+    alert(`hello ${1}`) // hello 1<br/>
+    alert(`hello ${"name"}`) // hello name<br/>
+    alert(`hello ${name}`) //hello Ilya<br/><br/>
+  </code>
+  <button onclick="textAlert()">Push Me</button>
+
+  <h3>Exercise 6</h3>
+  <p>Создайте страницу, которая спрашивает имя у пользователя и выводит его.</p>
+  <p id="userName" style="color:red; font-size: 20px"></p>
+  <Button onclick="openModal()">Открыть диалоговое окно</Button>
+
+  <h3>Exercise 8</h3>
+  <p>
+    Ниже приведён код, который запрашивает у пользователя два числа и показывает их сумму.<br />
+    Он работает неправильно. Код в примере выводит 12 (для значения полей по умолчанию).<br />
+    В чём ошибка? Исправьте её. Результат должен быть 3.<br /><br />
+    let a2 = prompt("Первое число?", 1)<br />
+    let b2 = prompt("Второе число?", 2)<br />
+    alert(Number(a2) + Number(b2)) // 3<br /><br />
+  </p>
+  <Button onclick="sumNumber()">Открыть диалоговое окно</Button>
+
+  <h3>Exercise 9</h3>
+
+  <span style="color:green">//Каким будет результат этих выражений?</span><br /><br />
+  5 > 4 // true<br />
+  "ананас" > "яблоко" //false<br />
+  "2" > "12" //true<br />
+  undefined == null //true<br />
+  undefined === null //false<br />
+  null == "\n0\n" //false<br />
+  null === +"\n0\n" //false<br />
+
+  <h3>Exercise 10</h3>
+  // Число 0, пустая строка "", null, undefined и NaN становятся false<br />
+  1. Выведется ли alert? - <b>Выведется</b><br /><br />
+  if ("0") {<br />
+  alert( 'Привет' );<br />
+  }<br /><br />
+  2. Используя конструкцию if..else, напишите код, который будет спрашивать: „Какое «официальное» название JavaScript?“
+  <br /><Button onclick="officialNameJS()">Открыть диалоговое окно</Button><br /><br />
+
+  3. Используя конструкцию if..else, напишите код, который получает число через prompt, а затем выводит в alert:<br />
+
+  1, если значение больше нуля,<br />
+  -1, если значение меньше нуля,<br />
+  0, если значение равно нулю.<br /><br />
+  <Button onclick="numbers()">Открыть диалоговое окно</Button><br /><br />
+
+  4. Перепишите конструкцию if с использованием условного оператора '?':<br /><br />
+  <code>
+    let result;<br />
+    if (a + b
+    < 4) {<br />
+    result = 'Мало';<br />
+    } else {<br />
+    result = 'Много';<br />
+    }<br /><br />
+    <span style="color:red">
+    result = a + b &#60; 4 ? 'Мало' : 'Много' 
+  </span>
+  </code>
+  <br /><br />
+  5.Перепишите if..else с использованием нескольких операторов '?'.<br /><br />
+  <code>
+  let message;<br />
+  if (login == 'Сотрудник') {<br />
+    message = 'Привет';<br />
+  } else if (login == 'Директор') {<br />
+    message = 'Здравствуйте';<br />
+  } else if (login == '') {<br />
+    message = 'Нет логина';<br />
+  } else {<br />
+    message = '';<br />
+  }<br /><br />
+  <span style="color:red">
+    message = login=='Сотрудник' ? 'Привет' : login=='Директор' ? 'Здравствуйте' : 'Нет логина'
+  </span>
+  
+  </code><br />
+  <br />
+  <Button onclick="query()">Проверить</Button>
+
+  <h3>Exercise 11</h3>
+  <Button onclick="authorization()">Открыть диалоговое окно</Button>
+</body>
+<!-- 
+<script src='./1/alert.js'></script>
+<script src='./4/index.js'></script>
+<script src='./5/index.js'></script>
+<script src='./6/index.js'></script>
+<script src='./8/index.js'></script>
+<script src='./10/index.js'></script>
+<script src='./11/index.js'></script>
+<script src='./13/index.js'></script> 
+<script src='./14/index.js'></script>
+<script src='./15/index.js'></script>-->
+<script src='./17/index.js'></script>
+
+</html>
